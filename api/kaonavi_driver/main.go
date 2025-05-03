@@ -28,6 +28,7 @@ func main() {
 		log.Fatal("event is required")
 	}
 
+	// Webhookイベントを処理
 	if err := member.EventWebhook(event); err != nil {
 		log.Fatal(err)
 	}
